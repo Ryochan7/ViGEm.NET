@@ -65,5 +65,7 @@ namespace Nefarius.ViGEm.Client.Targets
         ref short RightThumbX { get; }
         [UsedImplicitly]
         ref short RightThumbY { get; }
+        [UsedImplicitly]
+        ref ushort ButtonState { get; }
     }
 }

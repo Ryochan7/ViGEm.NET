@@ -10,6 +10,7 @@ namespace Nefarius.ViGEm.Client.Targets
         public ref short LeftThumbY => ref _nativeReport.sThumbLY;
         public ref short RightThumbX => ref _nativeReport.sThumbRX;
         public ref short RightThumbY => ref _nativeReport.sThumbRY;
+        public ref ushort ButtonState => ref _nativeReport.wButtons;
 
         public void SetButtonsFull(ushort buttons)
         {
