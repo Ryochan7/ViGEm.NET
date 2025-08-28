@@ -62,13 +62,15 @@ public sealed partial class ViGEmClient
     internal static extern VIGEM_ERROR vigem_target_x360_register_notification(
         PVIGEM_CLIENT vigem,
         PVIGEM_TARGET target,
-        PVIGEM_X360_NOTIFICATION notification);
+        PVIGEM_X360_NOTIFICATION notification,
+        PVIGEM_USER_DATA userData);
 
     [DllImport("vigemclient.dll", ExactSpelling = true, CallingConvention = CallingConvention.Cdecl)]
     internal static extern VIGEM_ERROR vigem_target_ds4_register_notification(
         PVIGEM_CLIENT vigem,
         PVIGEM_TARGET target,
-        PVIGEM_DS4_NOTIFICATION notification);
+        PVIGEM_DS4_NOTIFICATION notification,
+        PVIGEM_USER_DATA userData);
 
     [DllImport("vigemclient.dll", ExactSpelling = true, CallingConvention = CallingConvention.Cdecl)]
     internal static extern void vigem_target_x360_unregister_notification(

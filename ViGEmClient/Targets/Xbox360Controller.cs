@@ -94,7 +94,7 @@ internal partial class Xbox360Controller : ViGEmTarget, IXbox360Controller
 
         ViGEmClient.VIGEM_ERROR error = ViGEmClient.vigem_target_x360_register_notification(Client.NativeHandle,
             NativeHandle,
-            _notificationCallback);
+            _notificationCallback, System.IntPtr.Zero);
 
         switch (error)
         {

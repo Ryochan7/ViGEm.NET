@@ -93,7 +93,7 @@ internal partial class DualShock4Controller : ViGEmTarget, IDualShock4Controller
 
         ViGEmClient.VIGEM_ERROR error = ViGEmClient.vigem_target_ds4_register_notification(Client.NativeHandle,
             NativeHandle,
-            _notificationCallback);
+            _notificationCallback, System.IntPtr.Zero);
 
         switch (error)
         {
